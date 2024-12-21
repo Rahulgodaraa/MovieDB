@@ -1,0 +1,71 @@
+/* Custom styles to enhance Bootstrap */
+body {
+    background-color: #1a1d20;
+    color: #ffffff;
+  }
+  
+  .card {
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card-img-top {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #343a40;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #6c757d;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5c636a;
+  }
+  
+  /* Custom navbar styles */
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  /* Custom pagination styles */
+  .pagination .page-link {
+    background-color: #343a40;
+    border-color: #454d55;
+    color: #fff;
+  }
+  
+  .pagination .page-link:hover {
+    background-color: #454d55;
+    border-color: #545b62;
+    color: #fff;
+  }
+  
+  .pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+  
+  /* Movie details page styles */
+  .movie-details {
+    background-color: rgba(33, 37, 41, 0.95);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Cast card styles */
+  .cast-card {
+    background-color: #343a40;
+    border: none;
+  }
