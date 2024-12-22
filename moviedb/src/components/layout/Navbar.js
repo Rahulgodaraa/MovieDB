@@ -2,17 +2,24 @@ import React, { useState } from 'react';
 
 export const Navbar = ({ onSearch, onNavigate, currentView }) => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [isCollapsed, setIsCollapsed] = useState(true);  
+  const [isCollapsed, setIsCollapsed] = useState(true);
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSearch(searchQuery);
+    setIsCollapsed(true);  
+    setSearchQuery('');
+
+  };
+
+  
+
   const toggleNavbar = () => {
     setIsCollapsed(!isCollapsed);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle search functionality
-    setSearchQuery('');
-    setIsCollapsed(true); // Close navbar on mobile after search
-  };
+   
 
 
 
